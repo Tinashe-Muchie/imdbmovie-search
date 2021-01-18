@@ -1,0 +1,17 @@
+.header {    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border:hidden;
+    border-radius: 10px;
+    background-color:brown;
+    padding:25px;
+}    
+.nav-links {
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
