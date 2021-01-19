@@ -17,8 +17,8 @@ function App() {
       e.preventDefault()
       setQuery(e.target.value)
       const urlEncodedQuery = encodeURIComponent(query)
-      
-      fetch (`https://api.themoviedb.org/3/search/movie?api_key=2275e0d385947cc56fd79c498e925dba&page=1&include_adult=false&query=${urlEncodedQuery}`)
+
+      fetch (`https://api.themoviedb.org/3/search/movie?api_key=${process.env.local.REACT_KEY_APP}&page=1&include_adult=false&query=${urlEncodedQuery}`)
           .then(response => response.json())
           .then(data => {
             if(!data.errors){
