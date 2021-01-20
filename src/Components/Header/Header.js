@@ -6,24 +6,22 @@ export default function Header() {
     return (
         <>
         <div className="header">
-            <div>
-                <Link to="/">Watch List</Link>
-            </div>
+            <div></div>
             <ul className="nav-links">
-                <li>
-                    <Link to="/">Watch List</Link> 
+                <li >
+                    <Link to="/" className="link">Watch-List</Link> 
                 </li>
                 <li>
-                    <Link to="/TopRated">Top Rated</Link>
+                    <Link to="/TopRated" className="link">Top-Rated</Link>
                 </li>
                 <li>
-                    <Link to="/Upcoming">Up Coming</Link>
+                    <Link to="/Upcoming" className="link">Up-Coming</Link>
                 </li>
                 <li>
-                    <Link to="/Latest">Latest</Link>
+                    <Link to="/Watched" className="link">Watched</Link>
                 </li>
                 <li>
-                    <Link to="/Watched">Watched</Link>
+                    <Link to="/add" className="link"> +Add</Link>
                 </li>
             </ul>
         </div>

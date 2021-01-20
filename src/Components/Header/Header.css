@@ -3,15 +3,21 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-end;
     border:hidden;
-    border-radius: 10px;
-    background-color:brown;
-    padding:25px;
+    background-color:#45a29d;
+    padding:1.5%;
+    margin-bottom: 3%;
 }    
 .nav-links {
     list-style: none;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:inline-flex;
+}
+.link {
+    text-decoration: none;
+    margin: 10px;
+    color: #C5C6C7;
+    font-family: Papyrus;
+    font-size: large;
+    font-weight: bolder;
 }
