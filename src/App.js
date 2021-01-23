@@ -6,11 +6,13 @@ import Watched from './Components/Watched/Watched'
 import TopRated from './Components/TopRated/TopRated'
 import Upcoming from './Components/Upcoming/Upcoming'
 import WatchList from './Components/WatchList/WatchList'
+import GlobalContext from './Components/GlobalContext/GlobalContext'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+    <GlobalContext>
     <Router>
       <>
         <Header />
@@ -34,8 +36,8 @@ function App() {
         </Switch>
       </>
       </Router>
-    </div>
-    
+      </GlobalContext>
+    </div> 
   );
 }
 
