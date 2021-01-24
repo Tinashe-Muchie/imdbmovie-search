@@ -4,7 +4,7 @@ function AppReducer(state, action) {
         case 'ADD_MOVIE_TO_WATCHLIST':
             return {
             ...state,
-            addWatchList: [action.value, ...state.addWatchList]
+            addWatchlist: [action.value, ...state.addWatchlist]
             }
         default:
             return state
