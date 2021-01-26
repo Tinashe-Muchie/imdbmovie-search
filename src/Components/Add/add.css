@@ -56,3 +56,11 @@
     font-family: Papyrus;
     font-size: medium 
 }
+.filler {
+  width: 200px;
+  height: 100px;
+  background-color: #dbdada;
+  border-radius: 5px;
+  display: block;
+  color: transparent;
+}

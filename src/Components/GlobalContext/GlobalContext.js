@@ -19,7 +19,12 @@ function GlobalContext(props) {
             value: movie,
         })
     }
-
+    const addMovieToWatched = (movie)=>{
+        dispatch({
+            type: 'ADD_MOVIE_TO_WATCHED',
+            value: movie
+        })
+    }
     useEffect(()=>{
         localStorage.setItem('watchlist', JSON.stringify(state.addWatchlist))
         localStorage.setItem('watched', JSON.stringify(state.addWatched))
@@ -29,7 +34,8 @@ function GlobalContext(props) {
             <MovieContext.Provider value={{
                 addWatchlist: state.addWatchlist,
                 addWatched: state.addWatched,
-                addMovieToWatchlist
+                addMovieToWatchlist,
+                addMovieToWatched
                 }}>
                 {props.children}
             </MovieContext.Provider>

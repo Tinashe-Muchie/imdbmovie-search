@@ -12,12 +12,6 @@ export default function Header() {
                     <Link to="/" className="link">Watch-List</Link> 
                 </li>
                 <li>
-                    <Link to="/TopRated" className="link">Top-Rated</Link>
-                </li>
-                <li>
-                    <Link to="/Upcoming" className="link">Up-Coming</Link>
-                </li>
-                <li>
                     <Link to="/Watched" className="link">Watched</Link>
                 </li>
                 <li>
