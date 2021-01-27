@@ -11,7 +11,17 @@ function AppReducer(state, action) {
             return {
                 ...state,
                 addWatched: [action.value, ...state.addWatched],
-            }    
+            }   
+        case 'REMOVE_MOVIE_FROM_WATCHLIST':
+            return {
+                ...state,
+                addWatchlist: state.addWatchlist.filter((movie)=>movie.id !== action.value)
+            }
+        case 'REMOVE_MOVIE_FROM_WATCHED':
+            return {
+                ...state, 
+                addWatched: state.addWatched.filter(movie=> movie.id !== action.value)
+            }
         default:
             return state
     }

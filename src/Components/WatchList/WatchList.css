@@ -1,3 +1,20 @@
+.pillbackground {
+    background-color: #45a29d;
+    border: hidden;
+    border-radius: 10%;
+    padding: 0.5%;
+}
+.watchlistHeading {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #C5C6C7;
+    font-family: Papyrus;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .list {
     list-style-type: none;
 }
