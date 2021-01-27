@@ -25,6 +25,18 @@ function GlobalContext(props) {
             value: movie
         })
     }
+    const removeMovieFromWatchlist = (id)=>{
+        dispatch({
+            type: 'REMOVE_MOVIE_FROM_WATCHLIST',
+            value: id
+        })
+    }
+    const removeMovieFromWatched = (id) =>{
+        dispatch({
+            type: 'REMOVE_MOVIE_FROM_WATCHED',
+            value:id
+        })
+    }
     useEffect(()=>{
         localStorage.setItem('watchlist', JSON.stringify(state.addWatchlist))
         localStorage.setItem('watched', JSON.stringify(state.addWatched))
@@ -35,7 +47,9 @@ function GlobalContext(props) {
                 addWatchlist: state.addWatchlist,
                 addWatched: state.addWatched,
                 addMovieToWatchlist,
-                addMovieToWatched
+                addMovieToWatched,
+                removeMovieFromWatchlist,
+                removeMovieFromWatched
                 }}>
                 {props.children}
             </MovieContext.Provider>
