@@ -9,7 +9,11 @@ export default function WatchList() {
         <div>
             <div className="watchlistHeading">
                 <h1>Movie Watchlist</h1>
-                <h3 className="pillbackground">{addWatchlist.length} movies</h3>
+                {
+                    addWatchlist.length === 1?
+                    <h3 className="pillbackground">{addWatchlist.length} movie</h3>
+                    :<h3 className="pillbackground">{addWatchlist.length} movies</h3>
+                }
             </div>
             {addWatchlist.length > 0 ?
             <ul className='list grid-container'>

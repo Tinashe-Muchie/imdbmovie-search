@@ -3,9 +3,14 @@ import {MovieContext} from '../GlobalContext/GlobalContext'
 import './add.css'
 
 export default function AddMovieResults(props) {
-    const {addMovieToWatchlist, addWatchlist} = useContext(MovieContext)
+    const {addMovieToWatchlist, addWatchlist, addMovieToWatched, addWatched} = useContext(MovieContext)
     let storedMovie = addWatchlist.find(o => o.id === props.movie.id)
-    const addWatchListDisabled = storedMovie ? true : false;
+    let storedMovieWatched = addWatched.find(o => o.id === props.movie.id)
+    const addWatchListDisabled = storedMovie ? true 
+                                :storedMovieWatched ? true
+                                : false;
+    const addWatchedDisabled = storedMovieWatched ?true
+                                : false;
 
     return (
         <div>
@@ -22,7 +27,12 @@ export default function AddMovieResults(props) {
                                                     className="button" 
                                                     onClick={()=>addMovieToWatchlist(props.movie)}
                                                     disabled={addWatchListDisabled}
-                                                    >Add to Watch List</button></div>
+                                                    >Add to Watch List</button>
+                                                   <button 
+                                                    className="button" 
+                                                    onClick={()=>addMovieToWatched(props.movie)}
+                                                    disabled={addWatchedDisabled}
+                                                    >Add to Watched</button> </div>
               </div>
         </div>
     )

@@ -54,7 +54,8 @@
     color: '#C5C6C7';
     padding: 6%;
     font-family: Papyrus;
-    font-size: medium 
+    font-size: medium;
+    margin: 2%;
 }
 .filler {
   width: 200px;

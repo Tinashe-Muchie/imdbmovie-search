@@ -9,7 +9,11 @@ export default function Watched() {
         <div>
           <div className="watchedHeading">
                 <h1>Movies Watched</h1>
-                <h3 className="pillbackground">{addWatched.length} movies</h3>
+                {
+                    addWatched.length === 1?
+                    <h3 className="pillbackground">{addWatched.length} movie</h3>
+                    :<h3 className="pillbackground">{addWatched.length} movies</h3>
+                }
             </div>
             {addWatched.length > 0 ?
             <ul className='list grid-container'>
