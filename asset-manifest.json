@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/imdbmovie-search/static/css/main.261bea96.chunk.css",
+    "main.js": "/imdbmovie-search/static/js/main.efd5c4b0.chunk.js",
+    "main.js.map": "/imdbmovie-search/static/js/main.efd5c4b0.chunk.js.map",
+    "runtime-main.js": "/imdbmovie-search/static/js/runtime-main.10824e7c.js",
+    "runtime-main.js.map": "/imdbmovie-search/static/js/runtime-main.10824e7c.js.map",
+    "static/css/2.e29fc6ca.chunk.css": "/imdbmovie-search/static/css/2.e29fc6ca.chunk.css",
+    "static/js/2.d49a8340.chunk.js": "/imdbmovie-search/static/js/2.d49a8340.chunk.js",
+    "static/js/2.d49a8340.chunk.js.map": "/imdbmovie-search/static/js/2.d49a8340.chunk.js.map",
+    "index.html": "/imdbmovie-search/index.html",
+    "static/css/2.e29fc6ca.chunk.css.map": "/imdbmovie-search/static/css/2.e29fc6ca.chunk.css.map",
+    "static/css/main.261bea96.chunk.css.map": "/imdbmovie-search/static/css/main.261bea96.chunk.css.map",
+    "static/js/2.d49a8340.chunk.js.LICENSE.txt": "/imdbmovie-search/static/js/2.d49a8340.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/imdbmovie-search/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10824e7c.js",
+    "static/css/2.e29fc6ca.chunk.css",
+    "static/js/2.d49a8340.chunk.js",
+    "static/css/main.261bea96.chunk.css",
+    "static/js/main.efd5c4b0.chunk.js"
+  ]
+}
